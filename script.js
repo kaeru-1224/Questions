@@ -29,8 +29,8 @@ questions.forEach( question=> {
     btn.addEventListener('click',()=>{
         questions.forEach(item=> {
            if(item===question){
-            question.querySelector(".answer-text").classList.toggle("hidden");}
-            else( question.querySelector(".answer-text").classList.toggle("hidden"))}
+              question.querySelector(".answer-text").classList.toggle("hidden");}
+            else(item.querySelector(".answer-text").classList.add("hidden"))}
         )
 
 
