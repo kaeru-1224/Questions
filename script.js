@@ -35,7 +35,8 @@ questions.forEach( question=> {
         })
 
 
-    })
+    }); question.querySelector(".answer-text").classList.toggle("hidden")
+
         
         });
   
