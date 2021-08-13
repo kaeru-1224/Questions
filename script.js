@@ -27,6 +27,7 @@ const questions= document.querySelectorAll(".questions-text")
 questions.forEach( question=> {
     const btn =question.querySelector("button");
     btn.addEventListener('click',()=>{
+        
         questions.forEach(item=> {
            if(item===question){
             question.querySelector(".answer-text").classList.toggle("hidden");}
