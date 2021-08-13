@@ -1,11 +1,11 @@
-//1) 버튼을 눌러서 답이되는 부분을  보이게 하는 것부터 시작 
-//문제: 결국 한개만 나오게되어서, 전체div나 button에 적용되지 않음 
-//그래서 일일이 클래스 값을 다르게 주거나 id를 다르게 주는 방식으로 
-//진행을 하거나 방법을 찾아보기!  
-//우선 둘다 해보자  
+const btn1 = document.querySelectorAll(".btn");
+const a1= document.querySelectorAll(".answer-text")
 
-//1) html에서 클래스 값을 전체적으로 다르게줘서 진행
-const btn = document.querySelector(".btn01");
+function showAnswer(){
+    a1.forEach(a1=>{if(a1[0]){console.log(a1[0])}} )
+
+    
+}
 
 
-
+btn1.forEach(btn=> {btn.addEventListener('click',showAnswer)})

@@ -22,6 +22,6 @@ div{padding: 10px;
     width: 97%;
     height: 50%;
 }
-.a1 ,.a2,.a3{border-top: solid;}
+.a1{border-top: solid;}
 
 .hidden{display: none;}
