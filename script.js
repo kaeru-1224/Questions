@@ -2,26 +2,25 @@
 
 //부모노드의 형제들에  hidden의유무로 지우고 넣기로 할 수있었음 
 //문제: 한개가 열릴시 다른 부분이 닫히는 것을 못함 
+
+// html에 각 class를 일일이 두는 경우
+const questions= document.querySelectorAll(".answer-text")
+const btn1 =document.querySelector(".first")
+const btn2 =document.querySelector(".second")
+const btn3 =document.querySelector(".third")
+const btn =document.querySelectorAll(".open-btn")
+
+btn.forEach(btns=> {
+    if(btns.classList.contains(1))
+  {  btns.addEventListener('click',()=>{btn1.classList.toggle('hidden')})}
+    else if(btns.classList.contains(2)){
+        btns.addEventListener('click',()=>{btn2.classList.toggle('hidden')}) 
+    }
+    else{btns.addEventListener('click',()=>{btn3.classList.toggle('hidden')})
+
+    }});
+
 /*
-const btns= document.querySelectorAll("button");
-
-
-
-btns.forEach(openbtn=>{openbtn.addEventListener('click',function(e){
-    const answer= document.querySelectorAll(".answer-text")
-    const questions= e.currentTarget.parentNode;
-    const result= questions.nextElementSibling;
-    answer.forEach(
-        e=> {
-            const hidden =e.classList.contains("hidden");
-            if(hidden!==3){
-                result.classList.toggle("hidden")
-            }
-        }
-    )
-})})*/
-
-
 const questions= document.querySelectorAll(".questions-text")
 
 questions.forEach( question=> {
@@ -37,7 +36,7 @@ questions.forEach( question=> {
     }); question.querySelector(".answer-text").classList.toggle("hidden")
 
         
-        });
+        });*/
   
         
 
